@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
-  history: createWebHistory('/e-card'),
+  history: createWebHistory('/'),
   routes: [
     {
       path: '/',
       name: 'home',
-      component: () => import('../App.vue')
+      component: () => import('../views/Game/Home.vue')
     }
   ]
 })

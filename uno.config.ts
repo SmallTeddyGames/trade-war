@@ -13,7 +13,7 @@ export default defineConfig({
     "bg-active": "bg-gray:10",
     "flex-center": "flex items-center justify-center",
     "card-size": "w-120px h-164px",
-    "bg-Mask": "bg-white-80 dark:bg-black-30",
+    "bg-mask": "bg-white-80 dark:bg-black-30",
   },
   rules: [
     [/^t-a-(\d+)$/, ([, d]) => ({ transition: `all 0.${d}s linear` })],
