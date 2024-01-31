@@ -4,6 +4,6 @@ import GameMain from '@/views/Game/GameMain.vue'
 
 <template>
   <div w-full h-full flex-center bg-center bg-cover bg-no-repeat>
-    <GameMain />
+    <GameMain/>
   </div>
 </template>

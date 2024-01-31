@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import GameNav from "@/views/Layout/GameNav.vue";
 import GameContent from '@/views/Layout/GameContent.vue'
-import { useGlobalState } from '@/store'
-import { getAssetsFile } from '@/utils'
+import {useGlobalState} from '@/store'
+import {getAssetsFile} from '@/utils'
 
 const state = useGlobalState()
 </script>
@@ -10,7 +10,7 @@ const state = useGlobalState()
 <template>
   <main h-100dvh h-screen w-screen of-hidden bg-cover bg-center grid="~ rows-[max-content_1fr]"
         :style="{ backgroundImage: `url(${getAssetsFile(`${state.bgImage}.jpg`)})` }">
-    <GameNav />
-    <GameContent />
+    <GameNav/>
+    <GameContent/>
   </main>
 </template>
