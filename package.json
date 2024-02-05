@@ -5,14 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "commit": "cz",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview",
     "predeploy": "pnpm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@unocss/reset": "^0.58.0",
     "@vueuse/core": "^10.7.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
   },
@@ -29,5 +31,10 @@
     "unplugin-auto-import": "^0.17.2",
     "vite": "^5.0.0",
     "vue-tsc": "^1.8.22"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

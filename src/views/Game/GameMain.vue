@@ -1,14 +1,6 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
-  <div color-white grid="~ rows-[max-content_1fr]">
-    <div h-100 w-screen of-hidden flex-center>交易区域</div>
-    <div h-100 w-screen of-hidden flex-center>玩家区域</div>
+  <div h-full w-screen color-white p8 flex="~ col" gap-8>
+    <div h-full w-full of-hidden flex-center border="1px dashed #666" border-rd-2>电脑区域</div>
+    <div h-full w-full of-hidden flex-center border="1px dashed #666" border-rd-2>玩家区域</div>
   </div>
 </template>
-
-<style scoped>
-
-</style>

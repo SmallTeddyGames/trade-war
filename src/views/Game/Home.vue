@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import GameNav from "@/views/Layout/GameNav.vue";
 import GameContent from '@/views/Layout/GameContent.vue'
-import {useGlobalState} from '@/store'
 import {getAssetsFile} from '@/utils'
 
 const state = useGlobalState()

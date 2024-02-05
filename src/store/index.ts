@@ -1,5 +1,3 @@
-import {createGlobalState, useStorage} from '@vueuse/core'
-import {Ref} from 'vue'
 import {GameInfoType} from '@/views/Type'
 
 export const useGlobalState: () => Ref<GameInfoType> = createGlobalState(
