@@ -13,6 +13,13 @@ export const getRandomNumber = (max: number): number => {
 }
 
 /**
+ * 金额千分位格式化
+ */
+export const formatMoney = (value: number): string => {
+    return Math.round(value).toLocaleString('zh-CN')
+}
+
+/**
  * 深拷贝
  * @param obj 要拷贝的对象
  * @param map 已经拷贝的对象
