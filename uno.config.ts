@@ -15,6 +15,14 @@ import {
 } from "unocss";
 
 export default defineConfig({
+    //  动态渲染的图标，显式加入 safelist 防止漏扫
+    safelist: [
+        "i-mdi-cash-multiple",
+        "i-mdi-warehouse",
+        "i-mdi-information-outline",
+        "i-mdi-shield-check",
+        "i-mdi-tag"
+    ],
     //  自定义配置
     shortcuts: {
         "border-base": "border-gray-200 dark:border-gray-500",

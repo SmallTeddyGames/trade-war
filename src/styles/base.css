@@ -1,16 +1,18 @@
 html,
 body {
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
+    overscroll-behavior: none;
     --uno: bg-base font-ping;
 }
 
+/* 根字号随视口宽度流式缩放，所有 rem 尺寸（间距/字号/组件）整体等比适配屏幕 */
 html {
-    font-size: 14px;
+    font-size: clamp(12px, 0.35vw + 10.5px, 16px);
 }
 
 body {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .dark {
