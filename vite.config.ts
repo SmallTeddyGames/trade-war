@@ -5,7 +5,8 @@ import AutoImport from 'unplugin-auto-import/vite'
 import path from 'path'
 
 export default defineConfig({
-    base: './',
+    // GitHub Pages 部署在 /trade-war/ 子路径，dev 时为根路径
+    base: process.env.NODE_ENV === 'production' ? '/trade-war/' : '/',
     plugins: [
         vue(),
         UnoCSS(),
